@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+html,
+#root {
+  background: #f8f8f8;
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  text-align: center;
+  padding: 10px;
+}
+
+.dropzone-button {
+      border-radius: 10px;
+      border: 1px dashed;
+      height: 100%;
+      line-height: 160px;
+      background: url('../img/ic_file_upload_black_24px.svg') center center no-repeat;
+      background-size: 50%;
+}
+
+.dropzone-button-active {
+  background-color: #f1f1f1;
+}
+
+.dropzone-container {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 20%;
+  height: 20%;
+  min-width: 180px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+
+.dropzone-container.used {
+  height: 20px;
+  width: 100%;
+  top: auto;
+  padding: 10px;
+}
+
+.dropzone-container.used .dropzone-button {
+  line-height: 40px;
+  font-size: 13px;
+  background-size: 50px;
+  /*height: 20px;*/
+}
+
+.dropzone-active {
+  background: #f1f1f1;
+}
+
+.thumbnail {
+  list-style: none;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  max-height: 150px;
+  width: auto;
+}
+
+.thumbnail button {
+  background: none;
+  border: none;
+}
+
+#folder {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.deploy-button {
+  display: inline-block;
+  height: 60px;
+  width: 320px;
+  text-align: center;
+  border: 1px solid #222;
+  background: none;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.deploy-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.message-success {
+  color: #13844D;
+}
+
+.message-fail {
+  color: #D72951;
+}
